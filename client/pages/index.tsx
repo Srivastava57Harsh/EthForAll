@@ -4,6 +4,7 @@ import Web3Modal from 'web3modal';
 import { providers, Contract } from 'ethers';
 import { useState, useEffect, useRef } from 'react';
 import { CONTRACT_ADDRESS, abi } from '../constants';
+import Link from 'next/link';
 
 export default function Home() {
   const web3ModalRef = useRef();
@@ -58,10 +59,19 @@ export default function Home() {
     <>
       <Menu />
       <div className="flex w-full justify-center items-center flex-wrap">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Link href="/shecab" className="h-[80%]">
+          <Card
+            description="On our web-application, a female customer can find a cab to her destination and get a cab with female driver.
+          It increases the saftey measures for women and allow them to travel safely. Also, a female driver can get her
+          ride and earn money."
+            name="She Cab"
+            src="https://images.unsplash.com/photo-1675806963317-6fbf3b6d61ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80"
+          />
+        </Link>
+
+        <Link href="/votechain" className="h-[80%]">
+          <Card description="A decentralized voting platform" name="VoteChain" />
+        </Link>
       </div>
     </>
   );
