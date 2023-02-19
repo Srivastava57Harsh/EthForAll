@@ -13,11 +13,11 @@ Kickstart your ideas and bring them to life with SigmaStart</b>
 </p>
 <blockquote align="center">built on <span style="color: #8b0000;">☕</span> at <a href="https://ethforall.devfolio.co/">ETHforAll</a>.</blockquote>
 
-# 💪 Problem Statement
+# 💡  Problem Statement
 
 In India, people do not have huge capital to spend on investment at a particular moment or in one go and do not have the option of investing it on a recurring basis. As an attempt to solve the same, we present you SigmaStart.
 
-# 💡 Goals
+# 💪 Goals
 
 - Use SigmaStart to kickstart your projects and ideas and bring them to life. 
 
