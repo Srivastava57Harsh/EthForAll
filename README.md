@@ -15,11 +15,11 @@ Kickstart your ideas and bring them to life with SigmaStart</b>
 
 # 💡  Problem Statement
 
-In India, people do not have huge capital to spend on investment at a particular moment or in one go and do not have the option of investing it on a recurring basis. As an attempt to solve the same, we present you SigmaStart.
+In India, people do not have huge capital to spend on investment at a particular moment or in one go and do not have the option of investing it on a recurring basis. As an attempt to solve the same through the means of crowd funding, we present you SigmaStart✨🔥
 
 # 💪 Goals
 
-- Use SigmaStart to kickstart your projects and ideas and bring them to life. 
+- Use SigmaStart to kickstart your projects and ideas and bring them to life where anyone can invest a part of their income in the ideas/projects ranging from a common man to business tycoon, and that too on a recurring basis. This alienates the necessity of investing in one-go and provides flexiblity to users as well. At any point of time, if the investor feels that the idea/project hasn't met their expectations, they have the option of discontinuing the recurring investment as well. 
 
 # 🧠 Knowledge Primer
 
@@ -38,7 +38,7 @@ In India, people do not have huge capital to spend on investment at a particular
   <img alt="Preview Images" src="docs/SheCab1.jpeg"/>
 </div>
 
-The smart-contract has been deployed on Goerli test-net on the following address: 0x76b947b5fE236F24129c2DAdeF7B126507e873Ba
+The smart-contract has been deployed on Goerli test-net on the following address: `0x76b947b5fE236F24129c2DAdeF7B126507e873Ba`
 # 💻 Tech Stack
 
 - Next.js
