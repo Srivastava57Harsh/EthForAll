@@ -1,13 +1,14 @@
-# Sample Hardhat Project
+<div align="center">
+  <img alt="ETHforAll" src="docs/ETHforAll.png" height="300"/>
+</div>
+<div align="center">
+  <img alt="SigmaStart by SigmaNerds" src="docs/Logo.png" height="250" />
+</div>
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+<br>
+<p align="center">
+<b>SigmaNerds presents SigmaStart
+<br>
+Kickstart your ideas and bring them to life with SigmaStart</b>
+</p>
+<blockquote align="center">built on <span style="color: #8b0000;">☕</span> at <a href="https://ethforall.devfolio.co/">ETHforAll</a>.</blockquote>
