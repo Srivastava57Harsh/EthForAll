@@ -1,12 +1,11 @@
 import Menu from '@/components/menu/Menu';
 import Card from '@/components/cards/cards';
 import Web3Modal from 'web3modal';
-import { providers, Contract } from "ethers";
+import { providers, Contract } from 'ethers';
 import { useState, useEffect, useRef } from 'react';
 import { CONTRACT_ADDRESS, abi } from '../constants';
 
 export default function Home() {
-
   const web3ModalRef = useRef();
 
   const getProviderOrSigner = async (needSigner = false) => {
@@ -16,8 +15,8 @@ export default function Home() {
 
     const network = await web3Provider.getNetwork();
     if (network.chainId !== 5) {
-      window.alert("Change your network to goerli testnet");
-      throw new Error("Change to goerli testnet");
+      window.alert('Change your network to goerli testnet');
+      throw new Error('Change to goerli testnet');
     }
 
     if (needSigner) {
@@ -32,10 +31,11 @@ export default function Home() {
       const provider = await getProviderOrSigner();
       const contract = new Contract(CONTRACT_ADDRESS, abi, provider);
       const projID = await contract.receiveProjectid();
-      console.log(projID);
+      console.log(projID._hex);
       let projectInfo = [];
       for (let i = 0; i < projID; i++) {
         const project = await contract.projectlist(i);
+
         projectInfo.push(project);
       }
       console.log(projectInfo);
@@ -53,7 +53,6 @@ export default function Home() {
     });
     const data = allProjects();
   }, []);
-
 
   return (
     <>

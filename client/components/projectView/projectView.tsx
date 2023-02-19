@@ -1,13 +1,12 @@
-import React, { useEffect, useRef,useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Player } from '@livepeer/react';
 import { CONTRACT_ADDRESS, abi } from '../../constants';
 import Web3Modal from 'web3modal';
 import { providers, Contract } from 'ethers';
 
 const Project = () => {
-
   const [projectInfo, setProjectInfo] = useState({});
-  const [projectID, setProjectID] = useState(0);
+  const [projectID, setProjectID] = useState(1);
 
   const web3ModalRef = useRef();
 
@@ -53,7 +52,6 @@ const Project = () => {
     }
   };
 
-
   useEffect(() => {
     web3ModalRef.current = new Web3Modal({
       network: 'goerli',
@@ -64,11 +62,11 @@ const Project = () => {
 
   return (
     <div>
-      <h1>Project Name</h1>
-      <p>Project Description</p>
-      <p>Project Owner</p>
-      <p>Project Funding Goal</p>
-      <p>Project Funding Progress</p>
+      <h1>Votechain</h1>
+      <p>A decentralized voting platform</p>
+      <p>0x1e87f3F4FDBb276250fC064a3cf0069592280601</p>
+      <p>200</p>
+      <p>0</p>
       <p>Project Funding Deadline</p>
       <div className="ml-[25%] w-[50%] h-[50%]">
         <Player
