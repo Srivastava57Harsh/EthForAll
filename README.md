@@ -38,7 +38,7 @@ Kickstart your ideas and bring them to life with SigmaStart</b>
 #   Challenges we ran into
 
 - Since it was the first that we were working with Livepeer, uploading the video asset and playing it back from the playbackID was giving us some issues. 
-- Apart from this, creating a smart contract that serves our purpose was challenging. 
+- In addition, it was difficult to create a smart contract that met our needs, as it had to be suitable for new startups seeking funding.
 
 # 📜 License
 
