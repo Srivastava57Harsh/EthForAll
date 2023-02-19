@@ -29,17 +29,18 @@ const Project = () => {
     return web3Provider;
   };
 
-  const getProjectInfo = async () => {
+  const investInProject = async (projectID) => {
     try {
-      const provider = await getProviderOrSigner();
-      const contract = new Contract(CONTRACT_ADDRESS, abi, provider);
-      const projectInfo = await contract.getProjectInfo();
-      console.log(projectInfo);
-      return projectInfo;
+      const signer = await getProviderOrSigner(true);
+      const contract = new Contract(CONTRACT_ADDRESS, abi, signer);
+      const tx = await contract.funding(projectID);
+      await tx.wait();
+      return true;
     } catch (error) {
       console.log(error);
     }
   };
+
 
   useEffect(() => {
     web3ModalRef.current = new Web3Modal({
@@ -68,7 +69,7 @@ const Project = () => {
             autohide: 3000,
           }}
         />
-        <button>Invest</button>
+        <button onClick={() => investInProject(projectID)}>Invest</button>
       </div>
     </div>
   );
