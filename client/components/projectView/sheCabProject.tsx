@@ -51,11 +51,14 @@ const Project = () => {
   return (
     <div className="w-full h-[80vh] flex flex-col justify-center items-center gap-2">
       <div className="text-5xl font-bold">
-        <p>Votechain</p>
+        <p>She Cab</p>
       </div>
-      <div className="flex text-sm md:text-xl">
-        <p>Project Description : </p>
-        <p>A decentralized voting platform</p>
+      <div className="flex text-sm md:text-xl w-1/2">
+        <p className="text-center">
+          On our web-application, a female customer can find a cab to her destination and get a cab with female driver.
+          It increases the saftey measures for women and allow them to travel safely. Also, a female driver can get her
+          ride and earn money.
+        </p>
       </div>
       <div className="flex text-sm md:text-xl">
         <p>Owner : </p>
@@ -63,7 +66,7 @@ const Project = () => {
       </div>
       <div className="flex text-sm md:text-xl">
         <p>Investment Goal : </p>
-        <p>200</p>
+        <p>300</p>
       </div>
       <div className="flex text-sm md:text-xl">
         <p>Investment Progress : </p>
