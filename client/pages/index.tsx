@@ -65,7 +65,7 @@ export default function Home() {
           It increases the saftey measures for women and allow them to travel safely. Also, a female driver can get her
           ride and earn money."
             name="She Cab"
-            src="https://images.unsplash.com/photo-1675806963317-6fbf3b6d61ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80"
+            src="https://raw.githubusercontent.com/karanpargal/sheCab/main/images/frontend.png"
           />
         </Link>
 
