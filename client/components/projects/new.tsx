@@ -89,10 +89,10 @@ const New = () => {
       const signer = await getProviderOrSigner(true);
       const contract = new Contract(CONTRACT_ADDRESS, abi, signer);
       const tx = await contract.projectregister(
-        initialValues.name,
-        initialValues.description,
-        initialValues.investmentGoals,
-        initialValues.timeInDays,
+        "Voting App",
+        "A voting app",
+        1000,
+        100,
       );
       const receipt = await tx.wait();
       console.log(receipt);
@@ -231,7 +231,7 @@ const New = () => {
                       className="bg-[#3F51B5] p-3 rounded-md w-36 hover:opacity-60"
                       onClick={() => {
                         createAsset?.();
-                        getProviderOrSigner();
+                        sendInfoToContract();
                       }}
                     >
                       Submit
