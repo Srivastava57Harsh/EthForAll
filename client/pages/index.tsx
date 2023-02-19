@@ -33,7 +33,11 @@ export default function Home() {
       const contract = new Contract(CONTRACT_ADDRESS, abi, provider);
       const projID = await contract.receiveProjectid();
       console.log(projID);
-      const projectInfo = await contract.projectlist(projID);
+      let projectInfo = [];
+      for (let i = 0; i < projID; i++) {
+        const project = await contract.projectlist(i);
+        projectInfo.push(project);
+      }
       console.log(projectInfo);
       return projectInfo;
     } catch (error) {

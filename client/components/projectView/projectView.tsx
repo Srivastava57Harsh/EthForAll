@@ -41,19 +41,6 @@ const Project = () => {
     }
   };
 
-  const investInProject = async (projectID) => {
-    try {
-      const signer = await getProviderOrSigner(true);
-      const contract = new Contract(CONTRACT_ADDRESS, abi, signer);
-      const tx = await contract.funding(projectID);
-      await tx.wait();
-      return true;
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-
   useEffect(() => {
     web3ModalRef.current = new Web3Modal({
       network: 'goerli',
@@ -64,7 +51,12 @@ const Project = () => {
 
   return (
     <div>
-      <h1>Project</h1>
+      <h1>Project Name</h1>
+      <p>Project Description</p>
+      <p>Project Owner</p>
+      <p>Project Funding Goal</p>
+      <p>Project Funding Progress</p>
+      <p>Project Funding Deadline</p>
       <div className="ml-[25%] w-[50%] h-[50%]">
         <Player
           title="Waterfalls"
@@ -76,6 +68,7 @@ const Project = () => {
             autohide: 3000,
           }}
         />
+        <button>Invest</button>
       </div>
     </div>
   );
