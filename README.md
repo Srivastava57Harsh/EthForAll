@@ -61,5 +61,5 @@ Please read [`Contributing.md`](https://contributing.md/) for details on our cod
 
 # 💥 Contributors
 <a href="https://github.com/Srivastava57Harsh/EthForAll/graphs/contributors">
-<img src="https://github.com/Srivastava57Harsh/EthForAll/graphs/contributors" alt="Contributors">
+<img src="https://contrib.rocks/image?repo=Srivastava57Harsh/EthForAll" alt="Contributors">
 </a>
