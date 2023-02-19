@@ -41,6 +41,19 @@ const Project = () => {
     }
   };
 
+  const investInProject = async () => {
+    try {
+      const signer = await getProviderOrSigner(true);
+      const contract = new Contract(CONTRACT_ADDRESS, abi, signer);
+      const tx = await contract.funding(projectID);
+      await tx.wait();
+      return true;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
   useEffect(() => {
     web3ModalRef.current = new Web3Modal({
       network: 'goerli',
@@ -68,7 +81,7 @@ const Project = () => {
             autohide: 3000,
           }}
         />
-        <button>Invest</button>
+        <button onClick={() => investInProject(projectID)}>Invest</button>
       </div>
     </div>
   );
