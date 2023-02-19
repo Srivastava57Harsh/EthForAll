@@ -58,3 +58,8 @@ Kickstart your ideas and bring them to life with SigmaStart</b>
 # 🤝 Contributing
 
 Please read [`Contributing.md`](https://contributing.md/) for details on our code of conduct, and the process for submitting pull requests to us.
+
+# 💥 Contributors
+<a href="https://github.com/Srivastava57Harsh/EthForAll/graphs/contributors">
+<img src="https://github.com/Srivastava57Harsh/EthForAll/graphs/contributors" alt="Contributors">
+</a>
