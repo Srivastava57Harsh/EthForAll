@@ -13,7 +13,7 @@ export default async (req, res): Promise<void> => {
       investmentGoal: req.body.investmentGoal,
       investmentProgress: req.body.investmentProgress,
       }],
-    };
+  };
 
     await uploadInfoSchema.validate(projectInfo);
 
