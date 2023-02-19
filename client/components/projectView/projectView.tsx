@@ -41,7 +41,6 @@ const Project = () => {
     }
   };
 
-
   useEffect(() => {
     web3ModalRef.current = new Web3Modal({
       network: 'goerli',
