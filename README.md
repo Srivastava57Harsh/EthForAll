@@ -38,6 +38,7 @@ In India, people do not have huge capital to spend on investment at a particular
   <img alt="Preview Images" src="docs/SheCab1.jpeg"/>
 </div>
 
+The smart-contract has been deployed on Goerli test-net on the following address: 0x76b947b5fE236F24129c2DAdeF7B126507e873Ba
 # 💻 Tech Stack
 
 - Next.js
