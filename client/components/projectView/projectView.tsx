@@ -28,19 +28,7 @@ const Project = () => {
     return web3Provider;
   };
 
-  const getProjectInfo = async () => {
-    try {
-      const provider = await getProviderOrSigner();
-      const contract = new Contract(CONTRACT_ADDRESS, abi, provider);
-      const projectInfo = await contract.getProjectInfo();
-      console.log(projectInfo);
-      return projectInfo;
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const investInProject = async () => {
+  const investInProject = async (projectID) => {
     try {
       const signer = await getProviderOrSigner(true);
       const contract = new Contract(CONTRACT_ADDRESS, abi, signer);
